@@ -1,0 +1,35 @@
+//@use 'sass:color';
+
+$green: #00aa00;
+//$green_lighter: color.scale($green, $lightness: +15%);
+
+@debug 2px + 2px;
+
+@import 'style3-1.scss';
+
+@mixin marpad($v) {
+    margin: $v; //mnkjbk
+    padding: $v;
+}
+
+//cdwdw
+
+%myCode {
+    font-size: 10px + 2px;
+    font-style: italic;
+}
+
+.container {
+    background-color: #{$green};
+    @include marpad(0);
+    @extend %myCode;
+}
+.about__grid {
+    h4 {
+        background-color: lighten($green, 15%);
+        @extend %myCode;
+        &:hover {
+            background-color: yellow;
+        }
+    }
+}
