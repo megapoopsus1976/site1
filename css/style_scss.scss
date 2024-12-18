@@ -98,13 +98,13 @@ body {
 
 .header {
     min-height: 740px;
-    background-image: url(../img/first_screen_bg.jpg);
+    background-image: url(../img/first-screen-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0px 15px;
 }
 
-.header__title {
+.header__menu {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -140,6 +140,46 @@ body {
 
 .burger__line:last-child {
     margin-bottom: 0;
+}
+
+
+.developer-info {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%, 0px);
+    background: gray;
+    border: 1px solid black;
+    box-shadow: 2px 2px 12px 3px black;
+    padding: 10px 10px;
+}
+
+.developer-info__h3 {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.developer-info__container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.developer-info__link {
+    background: white;
+    border: 1px solid black;
+    font-size: 30px;
+    padding: 5px 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .developer-info__h3 {
+        font-size: 20px;
+    }
+    .developer-info__link {
+        font-size: 15px;
+    }
 }
 
 .h1 {
@@ -182,14 +222,14 @@ body {
 }
 
 
-.about__grid {
+.about__achivements {
     // @include media_grid(3 2 1);
     @include media_grid();
     justify-items: center;
     gap: 30px;
 }
 
-.about__grid-item {
+.about__achivements-item {
     text-align: center;
     width: 190px;
 }
@@ -221,19 +261,19 @@ body {
     }
 }
 
-.project-h2 {
+.about__project-h2 {
     text-align: center;
     color: var(--dark-color);
     margin-bottom: 50px;
 }
 
-.about__flex {
+.about__project {
     display: flex;
     justify-content: space-between;
     gap: 30px;
 }
 
-.about__flex-item {
+.about__project-item {
     max-width: 350px;
 }
 
@@ -241,14 +281,14 @@ body {
     margin-bottom: 45px;
 }
 
-.project_line {
+.about__project-line {
     width: 55px;
     height: 6px;
     background-color: var(--accent-color);
     margin-bottom: 15px;
 }
 
-.project_title {
+.about__project-title {
     margin-bottom: 14px;
 }
 
@@ -264,13 +304,13 @@ body {
         padding-top: 150px;
     }
 
-    .about__flex {
+    .about__project {
         flex-direction: column;
         align-items: center;
     }
 }
 
-.project-p {
+.about__project-p {
     color: var(--gray-color);
 }
 
@@ -280,7 +320,7 @@ body {
     min-height: 181px;
 }
 
-.request_flex {
+.request__inner {
     display: flex;
     justify-content: space-between;
     padding-top: 30px;
@@ -288,9 +328,9 @@ body {
     padding-bottom: 40px;
 }
 
-.request_title {}
+.request__title {}
 
-.request-h2 {
+.request__h2 {
     font-weight: 700;
     font-size: 48px;
     letter-spacing: 0.02em;
@@ -299,7 +339,7 @@ body {
     margin-bottom: 7px;
 }
 
-.request-h3 {
+.request__h3 {
     font-weight: 700;
     font-size: 24px;
     letter-spacing: 0.02em;
@@ -307,7 +347,7 @@ body {
     text-transform: uppercase;
 }
 
-.request_button {
+.request__button {
     width: 175px;
     height: 49px;
     background-color: var(--white-color);
@@ -320,11 +360,11 @@ body {
 
 }
 
-.request_img {
+.request__img {
     margin-right: 15px;
 }
 
-.request_btn_p {
+.request__btn-text {
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.05em;
@@ -341,15 +381,15 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    .request-h2 {
+    .request__h2 {
         font-size: 30px;
     }
 
-    .request-h3 {
+    .request__h3 {
         font-size: 15px;
     }
 
-    .request_flex {
+    .request__inner {
         flex-direction: column;
     }
 }
@@ -362,19 +402,19 @@ body {
     padding-right: 15px;
 }
 
-.services-h2 {
+.services__h2 {
     color: #000;
     margin-bottom: 56px;
     text-align: center;
 }
 
-.services__grid {
+.services__inner {
     @include media_grid(3 2 1);
     gap: 30px;
     justify-items: center;
 }
 
-.services__grid-item {
+.services__inner-item {
     background-color: #F7F7F7;
     display: flex;
     justify-content: center;
@@ -400,11 +440,11 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    .services__grid-item {
+    .services__inner-item {
         padding: 29px 12px 29px 12px;
     }
 
-    .services-h2 {
+    .services__h2 {
         font-size: 24px;
     }
 
@@ -417,13 +457,13 @@ body {
 
 .portfolio {}
 
-.portfolio__grid {
+.portfolio__container {
     display: grid;
     justify-items: stretch;
     @include media_grid();
 }
 
-.portfolio-img {
+.portfolio__img {
     width: 100%;
     height: 100%;
 }
@@ -434,7 +474,7 @@ body {
     padding: 150px 15px 96px;
 }
 
-.question-h2 {
+.question__h2 {
     text-align: center;
     color: #000;
     margin-bottom: 50px;
@@ -448,13 +488,13 @@ body {
 
 .question__list-item {}
 
-.question__list-item_details {
+.question__list-item-details {
     color: var(--gray-color);
     max-width: 730px;
     padding-bottom: 8px;
 }
 
-.question__list-item_details[open] {
+.question__list-item-details[open] {
     padding-bottom: 37px;
 }
 
@@ -473,7 +513,7 @@ body {
     margin: -3px 15px 0 3px;
 }
 
-.question__list-item_details[open]>.question__list-item-summary::before {
+.question__list-item-details[open]>.question__list-item-summary::before {
     content: "▲";
     margin: -6px 14px 0 2px;
 }
@@ -483,7 +523,7 @@ body {
         padding: 50px 15px 96px;
     }
 
-    .question-h2 {
+    .question__h2 {
         font-size: 24px;
     }
 
@@ -498,13 +538,13 @@ body {
     padding: 100px 15px;
 }
 
-.partners-h2 {
+.partners__h2 {
     color: var(--white-color);
     margin-bottom: 50px;
     text-align: center;
 }
 
-.partners__flex {
+.partners__container {
     display: flex;
     flex-wrap: wrap;
     gap: 64px;
@@ -514,7 +554,7 @@ body {
 .partners__img {}
 
 @media screen and (max-width: 768px) {
-    .partners-h2 {
+    .partners__h2 {
         font-size: 24px;
     }
 }
@@ -525,33 +565,33 @@ body {
     padding: 150px 15px 143px 15px;
 }
 
-.reviews-h2 {
+.reviews__h2 {
     text-transform: uppercase;
     color: #000;
     margin-bottom: 63px;
     text-align: center;
 }
 
-.reviews__flex {
+.reviews__container {
     display: flex;
     gap: 30px;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.reviews__flex-item {
+.reviews__container-item {
     width: 350px;
     display: grid;
     grid-template-rows: 1fr auto;
 }
 
-.reviews__flex-item_card {
+.reviews__container-item-card {
     background: #f7f7f7;
     padding: 30px 30px 33px 30px;
     margin-bottom: 30px;
 }
 
-.reviews_h5 {
+.reviews__h5 {
     font-weight: 700;
     font-size: 96px;
     text-transform: uppercase;
@@ -561,17 +601,17 @@ body {
     margin-left: -2px;
 }
 
-.reviews-p {
+.reviews__p {
     line-height: 150%;
     color: var(--gray-color);
 }
 
-.reviews-h4 {
+.reviews__h4 {
     letter-spacing: 0.02em;
     color: #000;
 }
 
-.reviews_company {
+.reviews__company {
     color: var(--accent-color);
     letter-spacing: 0.033em;
 }
@@ -581,11 +621,11 @@ body {
         padding: 50px 15px 96px;
     }
 
-    .reviews-h2 {
+    .reviews__h2 {
         font-size: 24px;
     }
 
-    .reviews__flex-item_card {
+    .reviews__container-item-card {
         margin-bottom: 5px;
     }
 }
@@ -595,48 +635,48 @@ body {
     padding: 98px 15px 150px 15px;
 }
 
-.contacts-h2 {
+.contacts__h2 {
     text-transform: uppercase;
     color: #000;
     margin-bottom: 60px;
     text-align: center;
 }
 
-.contacts__grid {
+.contacts__container {
     justify-content: space-between;
     gap: 30px;
     justify-items: center;
     @include media_grid();
 }
 
-.contacts__grid-item {
+.contacts__container-item {
     width: 255px;
     text-align: center;
 }
 
-.contacts__grid-item_img {
+.contacts__container-item-img {
     margin: 0 auto;
     padding-bottom: 16px;
 }
 
-.contacts-h3 {
+.contacts__h3 {
     color: var(--gray-color);
     margin-bottom: 19px;
     text-transform: uppercase;
 }
 
-.contacts-p {
+.contacts__p {
     color: #000;
     text-transform: uppercase;
 }
 
-.contacts_accent {
+.contacts__p_accent {
     color: var(--accent-color);
 }
 
 
 @media screen and (max-width: 768px) {
-    .contacts__grid-item {
+    .contacts__container-item {
         width: 250px;
     }
 }
@@ -648,13 +688,13 @@ body {
     background-color: var(--dark-color);
 }
 
-.footer_flex {
+.footer__container {
     display: flex;
     justify-content: space-between;
     gap: 20px;
 }
 
-.footer-p {
+.footer__p {
     color: var(--white-color);
 }
 
